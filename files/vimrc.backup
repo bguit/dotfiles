@@ -1,0 +1,10 @@
+" Specify a directory for plugins
+"
+set nocompatible
+
+call plug#begin()
+
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdtree'
+ " Initialize plugin system
+call plug#end()
