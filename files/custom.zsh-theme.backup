@@ -9,7 +9,7 @@ else
     local user_symbol='$'
 fi
 
-local current_dir='%{$terminfo[bold]%F{14}%}%~ %f%{$reset_color%}'
+local current_dir='%{$terminfo[bold]%}%~ %f%{$reset_color%}'
 local git_branch='$(git_prompt_info)'
 local rvm_ruby='$(ruby_prompt_info)'
 local venv_prompt='$(virtualenv_prompt_info)'
