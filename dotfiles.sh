@@ -9,11 +9,13 @@ case $1 in
     "tolocal" ) 
         cp ./files/tmux.backup ~/.tmux.conf
         cp ./files/vimrc.backup ~/.vimrc
+        cp ./files/zshrc.backup ~/.zshrc
         cp ./files/custom.zsh-theme.backup ~/.oh-my-zsh/themes/custom.zsh-theme
         echo "Install: Done!"
     ;;
     "fromlocal" ) 
         cp ~/.tmux.conf ./files/tmux.backup
+        cp ~/.zshrc ./files/zshrc.backup
         cp ~/.vimrc ./files/vimrc.backup
         cp ~/.oh-my-zsh/themes/custom.zsh-theme ./files/custom.zsh-theme.backup
         echo "Update: Done!"
